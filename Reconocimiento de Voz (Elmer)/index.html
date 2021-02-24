@@ -1,0 +1,55 @@
+<!--
+Estudiante: Elmer Vargas Salazar
+Curso: Desarrollo de Aplicaciones Web con Javascript
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elmer Vargas Salazar">
+    <meta name="description" content="Aplicación web sobre un reconocimiento de voz en español" lang="es">
+    <meta name="keywords" content="Reconocimiento, Voz, Reproducir" lang="es">
+    <!--Título de Pestaña-->
+    <title>Reconocimiento de Voz</title>
+    <!--Icono de Pestaña-->
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!--Encabezado-->
+        <header>
+            <h1>Reconocimiento de Voz</h1>
+            <img src="img/head_img.jpg" width="160" height="110" alt="Reconocimiento de Voz">
+        </header>
+        <!--Contenido Reconocimiento de Voz-->
+        <main>
+            <div class="botones">
+                <button id="btnStartRecord" title="Haz clic para grabar voz">Empezar a Grabar</button>
+                <button id="btnStopRecord" title="Haz clic para parar">Finalizar Grabación</button>
+                <button id="playText" title="Reproduce lo almacenado">REPRODUCIR</button>
+                <button id="deleteText" title="Borra lo escrito">BORRAR</button>
+            </div>
+            <textarea id="texto"></textarea>
+        </main>
+        <!--Pie de Página-->
+        <footer>
+            <div>
+                <h3>Martes 26 de enero, 2021</h3>
+                <h3>Diseño: Elmer Vargas Salazar</h3>
+                <h3>Desarrollo de Aplicaciones Web con Javascript</h3>
+            </div>
+            <div>
+                <img src="img/js.png" width="80" height="80" alt="Javascript Logo">
+            </div>
+        </footer>
+    </div><!--Fin de wrapper-->
+
+    <!--Script Javascript-->
+    <script src="js/reconocimiento.js"></script>
+</body>
+</html>
